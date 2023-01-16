@@ -1,0 +1,172 @@
+.navbarContainer {
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0px;
+    padding: 0px 20px;
+    z-index: 10;
+    background-color: ;
+  }
+  
+  .navbarList {
+    display: flex;
+  }
+  
+  .navbarIcon {
+    display: none;
+  }
+  
+  .navbarItem {
+    font-weight: bold;
+    margin: 0px 15px;
+    cursor: pointer;
+  }
+  
+  .activeNavbarItem {
+    margin: 0px 10px;
+    font-weight: bold;
+    margin: 0px 15px;
+    cursor: pointer;
+    color: #9925ad;
+    border-bottom: 2px solid #9925ad;
+  }
+  
+  .navbarItem:hover {
+    color: #9925ad;
+  }
+  
+  .btnlg {
+    width: 70px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbarList {
+      display: none;
+    }
+  
+    .navbarIcon {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .navbarMobile {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-y: hidden;
+    }
+  
+    .navbarMobileItem {
+      cursor: pointer;
+    }
+  
+    .navbarMobileItem:hover {
+      color: #9925ad;
+      transition: all 0.5s;
+    }
+  
+    .navbarMobileClose {
+      position: absolute;
+      top: 0;
+      cursor: pointer;
+    }
+  }
+  
+
+  .videoContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 25px 100px;
+    /* margin-top: -20px; */
+    z-index: 10;
+  }
+  
+  .videoContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 60%;
+    margin: 0px 20px;
+    z-index: 5;
+  }
+  
+  .videoContent h1 {
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 5px;
+    text-shadow:
+      0 0 7px rgb(244, 227, 227),
+      0 0 10px rgb(236, 217, 217),
+      0 0 21px rgb(230, 212, 212),
+      0 0 27px rgb(209, 209, 209)
+  }
+  
+  .videoContent h3 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  
+  .videobtn {
+    margin: 10px;
+    margin-left: 0px;
+    width: 20%;
+    min-width: 150px;
+  }
+  
+  .vidbutton {
+    display: flex;
+  }
+
+  .cardContainer {
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+    margin: 15px;
+  }
+
+  .imgDiv{
+    background-image: -moz-linear-gradient(top, rgba(247, 247, 247, 0.5) 0%, rgba(14, 37, 55, 0.5) 100%);
+      /* background-image: -webkit-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%); */
+      /* background-image: -ms-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%); */
+      /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); */
+      mix-blend-mode: overlay;
+  }
+
+  .cardImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  .cardText{
+    z-index: 1;
+    margin-top: -100px;
+    margin-left: 20px;
+  }
+
+  .NftPanelContainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nftpanel{
+    margin: 15px;
+  }
+
+  .nftpanel h3{
+    margin-left: 20px;
+    text-shadow:
+      0 0 7px rgb(244, 227, 227),
+      0 0 10px rgb(236, 217, 217),
+      0 0 16px rgb(230, 212, 212)
+  }
